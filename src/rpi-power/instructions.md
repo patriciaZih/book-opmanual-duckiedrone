@@ -293,6 +293,8 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 * red LEDs on the PDB light up.
 
 * red LED on Raspberry Pi lights up.
+
+Check if the LED ligfhts up when connecting to the Raspberry Pi.
 ```
 
 ## Put Heat Sinks on Raspberry Pi
