@@ -105,9 +105,9 @@ This is a crucial setting. A mistake here will cause your drone to confuse left/
 To fix the flight controller to the frame use the 4 white M3 Nylon screws:
 
 1.  Insert the bolts **from the front** side of the frame.
-1.  Insert the rubber spacers on the bolt from the bottom side of the frame. ![Rubber spacers on bolt](../_images/fc-cleanflight/bolt_with_spacer.png)
+2.  Insert the rubber spacers on the bolt from the bottom side of the frame. ![Rubber spacers on bolt](../_images/fc-cleanflight/bolt_with_spacer.png)
 
-1.  Screw the nuts on the bolts from the bottom side.
+3.  Screw the nuts on the bolts from the bottom side.
 
 ```{attention}
 The `OSD` version of the Flight Controller has the soldered battery leads header pins partially occluding the space for the nut to be screwed.
@@ -149,6 +149,10 @@ Motors numbering
 ```
 
 ````
+
+```{tip}
+When you connect the motors, it shows the opposite of how they are supposed to spin. So when you connect the ESC’s wires, instead of connecting them 1,2,3 to A,B,C. Connect them 1 to B ; 2 to A ; 3 remains with C. This will correct the issue of the motors being clockwise and counterclockwise.
+```
 
 ```{attention}
 There is a correct way to connect an ESC cable to the Flight Controller.
@@ -276,23 +280,31 @@ The solution to this problem is to *calibrate* the ESCs with the Flight Controll
 
 1. On your base station, open cleanflight
 
-1. Connect the Flight Controller to a computer and click "Connect" in the top right of the screen
+2. Connect the Flight Controller to a computer and click "Connect" in the top right of the screen
 
 ### Navigate to Motors tab
 
 1. Go to the **Motors** tab in Cleanflight. 
 2. Read the safety notice and check the box that says `“I understand the risks, propellers are removed - Enable motor control”`.
+```{attention}
+For configuration:
+Switch the ESC to PWM
+Change the pitch to zero
+Change the roll to 180
+Save and reboot
+
+```
 
 ### Calibrate
 
 1. **With the battery disconnected**, drag the master slider up to `full`. All 4 motor sliders should automatically move up to full accordingly (e.g. `2000`).
 
-1. Plug the battery into your drone. 
+2. Plug the battery into your drone. 
 
     The ESCs will make an interesting set of sounds, kind of like music. If they do not, stop and try the previous steps again.
 
 3. After the music stops, drag the master slider to the bottom of the bar. Correspondingly, all 4 motor sliders should automatically be at the bottoms of their bars (e.g. `1000`). The motors will make another set of sounds.
 
-1. After the sounds stop, spin up each motor and verify it is spinning in the correct direction (i.e. according to the motors diagram in this doc).
+4. After the sounds stop, spin up each motor and verify it is spinning in the correct direction (i.e. according to the motors diagram in this doc).
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/797686925?h=b40fa6d538&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="esc calibration (new ESCs)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
