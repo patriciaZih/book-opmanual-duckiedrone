@@ -141,7 +141,9 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
     Connect the white end of the 6 pin cable to this port on the Flight Controller
     ```
-
+```{note}
+These pins will be soldered later on in hardware.
+```
 :::
 
 :::{tab-item} ACRO
