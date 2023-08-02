@@ -141,7 +141,9 @@ c.  Connect the white connector of the 6 pins cable to the Flight Controller por
 
     Connect the white end of the 6 pin cable to this port on the Flight Controller
     ```
-
+```{note}
+These pins will be soldered later on in hardware.
+```
 :::
 
 :::{tab-item} ACRO
