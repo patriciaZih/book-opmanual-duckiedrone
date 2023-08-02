@@ -36,7 +36,9 @@ Finally, the drone is able to Simultaneously Localize And Map (SLAM) which means
 ```{seealso}
 For more information about the camera, watch [these lectures](https://edge.edx.org/courses/course-v1:Brown+CSCI1951-R+2020_summer/courseware/0e3596880ec446d8ab63df427e02e9c4/ccd9eede2624475b91ce4b55ee51ce87/?activate_block_id=block-v1%3ABrown%2BCSCI1951-R%2B2020_summer%2Btype%40sequential%2Bblock%40ccd9eede2624475b91ce4b55ee51ce87) (you will need to create a free EdX account to view the material)
 ```
-
+```{danger}
+The white flex cable is connected to the camera, do not tear it!
+```
 ```{figure} ../_images/components-official/camera.png
 
 Raspberry Pi Camera
